@@ -1,0 +1,19 @@
+<!--pages/searchuserinfo/searchuserinfo.wxml-->
+<view class="userinfo" style="opacity: 0.8;">
+  <view class="userinfo_text_area">
+    <view class="userinfo_nickname_box">{{username}}</view>
+  </view>
+  <view class="userinfo_id_box">
+    <text>{{userid}}</text>
+  </view>
+  <view class="userinfo_id_box">
+    <text>信用分:{{results[0][0].score}}</text>
+  </view>
+  <view class="userinfo_id_box">
+    <text>借书次数:{{results[1][0].countborrow}}</text>
+  </view>
+  <view class="userinfo_id_box">
+    <text>预约座位次数:{{results[2][0].countyuyue}}</text>
+  </view>
+</view>
+

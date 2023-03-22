@@ -1,0 +1,10 @@
+<view class="welcome">欢迎,{{username}}</view>
+<view class="contain">
+    <button bindtap="jump">查询测试</button>
+  <button bindtap="toAddVio">添加违规记录</button>
+  <button bindtap="toDelVio">消除违规记录</button>
+  <button bindtap="toAddReader">添加读者</button>
+  <button bindtap="todelReader">删除读者</button>
+  <button bindtap="toaddBook">录入图书</button>
+</view>
+

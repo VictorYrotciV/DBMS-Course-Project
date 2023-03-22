@@ -1,0 +1,19 @@
+<!--pages/about/about.wxml-->
+<view>
+  <view id="look">
+    <text>search test</text>
+  </view>
+  <form bindsubmit="submit">
+    <view class="msginput">
+      <input id="input" name="name" type="text"  value="张麻子"/>
+    </view>
+    <view class="msginput"> <input id="input2" name="name2" type="text2"  value="汤师爷"/></view>
+    <button form-type="submit" >搜索</button>
+  </form>
+  <view id="result" class="rst1">
+    <text class="tishi">搜索结果：</text>
+    <textarea name="" id="out" cols="30" rows="10" class="msginput">{{text}}</textarea>
+  </view>
+  <button id="bottom" bindtap="back">返回</button>
+</view>
+

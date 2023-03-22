@@ -1,0 +1,31 @@
+<!--pages/addReader/addReader.wxml-->
+<!--pages/about/about.wxml-->
+<view>
+  <view id="look">
+    <text class="tishi">添加读者信息</text>
+  </view>
+  <form bindsubmit="submit">
+    <view class="tishi"> 证件号码:</view>
+    <view class="msginput"><input id="input" name="id" type="text"  placeholder="请输入证件号码"/></view>
+    <view class="tishi"> 姓名:</view>
+    <view class="msginput"> <input id="input" name="name" type="text" placeholder="请输入姓名"/></view>
+    <view class="tishi"> 人员类型:</view>
+    <view  class="msginput" bindtap='bindShowMsg'>
+      <input id="input" name="class"   value="{{selectedclass}}" disabled="true"/>
+    </view>
+<!-- 下拉需要显示的列表 -->
+    <view class="select_box" wx:if="{{select}}">
+        <view class="select_one" bindtap="mySelect" data-name="校内人员">校内人员</view>
+        <view class="select_one" bindtap="mySelect" data-name="校外人员">校外人员</view>
+    </view>
+    <view class="tishi"> 部门名称/来访单位:\n</view>
+    <view class="msginput"> <input id="input" name="dept" type="text"  placeholder="输入部门名称（校内人员）或来访单位（校外人员）"/></view>
+    <button form-type="submit" >插入</button>
+  </form>
+  <view id="result" class="rst1">
+    <text class="tishi">结果：</text>
+    <textarea name="2"   class="msginput">{{text}}</textarea>
+  </view>
+  <button id="bottom" bindtap="back">返回</button>
+</view>
+

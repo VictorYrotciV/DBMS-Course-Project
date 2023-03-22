@@ -1,0 +1,7 @@
+<!--pages/reader/reader.wxml-->
+<view class="welcome">欢迎,{{username}}</view>
+<view class="contain">
+  <button bindtap="tosearchbook">查找书籍信息</button>
+  <button bindtap="tolookreader">查看个人信息</button>
+  <button bindtap="toborrow">借阅图书</button>
+</view>

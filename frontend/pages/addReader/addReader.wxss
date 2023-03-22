@@ -1,0 +1,4 @@
+/* pages/addReader/addReader.wxss */
+.blank{
+   height: 120rpx;
+}

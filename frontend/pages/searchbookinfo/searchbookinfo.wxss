@@ -1,0 +1,41 @@
+/* pages/searchbookinfo/searchbookinfo.wxss */
+.showcolumn{
+    margin-left: 10rpx;
+    margin-right: 10rpx;
+    border: 1rpx solid gray;
+    display: flex;
+  flex-direction: row;
+  height: 100rpx;
+}
+.innerbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex: 1 1 auto;
+    position: relative;
+    border: 1rpx solid black;
+    background-color: white;
+    opacity: 0.9;
+    word-break: break-all;
+}
+.blankarea{
+    height: 160rpx;
+}
+.searchtext{
+    color: red;
+    word-break: break-all;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 40rpx;
+    margin-left: 20rpx;
+    margin-right: 20rpx;
+    background-color: rosybrown;
+    border: 1rpx solid gray;
+    opacity: 0.8;
+}

@@ -1,0 +1,40 @@
+<!--pages/delVio/delVio.wxml-->
+<!--pages/about/about.wxml-->
+<view>
+  <view id="look">
+    <text class="tishi">消除违规记录\n</text>
+    <text  style="color: aliceblue;">说明: 消除违规记录会在数据库中保留违规记录方便核查,但会将违规记录的状态设置为不生效,并为读者补回相应的信用分</text>
+  </view>
+  <form bindsubmit="submit">
+    <text class="tishi">违规人员证件号码</text>
+    <view class="msginput">
+      <input id="input" name="id" placeholder="请输入证件号码"/>
+    </view>
+    <text class="tishi">违规时间</text>
+    <view class="msginput"> 
+      <input id="input" name="viotime"  placeholder="请输入时间，例如2022年3月13日为20220313"/>
+    </view>
+    <text class="tishi">违规原因</text>
+    <view class="msginput"> 
+      <!--下拉框  -->
+    <view  bindtap='bindShowMsg' >
+      <!--<text>{{chosenreason}}</text>-->
+      <input id="input" name="vioreason"   value="{{chosenreason}}"/>
+    </view>
+    <view class="select_box" wx:if="{{select}}">
+        <view class="select_one" bindtap="mySelect" wx:for="{{vioname}}" wx:key="reason" data-name="{{item.reason}}">{{item.reason}}</view>
+    </view>
+    </view>
+    <button form-type="submit">消除</button>
+  </form>
+
+
+
+
+  <view id="result" class="rst1">
+    <text class="tishi">结果：</text>
+    <textarea name="2"   class="msginput">{{text}}</textarea>
+  </view>
+  <button id="bottom" bindtap="back">返回</button>
+</view>
+

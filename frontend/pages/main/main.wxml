@@ -1,0 +1,23 @@
+
+<view class="container">
+  <view class="title" style="top:0">图书馆管理系统</view>
+  <view class="item_box" hover-class="item_box_hover" bindtap="toReader" >
+        <view>
+            <image class="image_in_item" src="images//读者.png"></image>
+        </view>
+    <view class="text_in_item">我是读者</view>
+        <view>
+            <image  class="icon_goto_in_the_last" src="images//goto.png"></image>
+        </view>
+    </view>
+
+    <view class="item_box" hover-class="item_box_hover" bindtap="toManager" >
+        <view>
+            <image class="image_in_item" src="images//管理人员.png"></image>
+        </view>
+    <view class="text_in_item">我是管理人员</view>
+        <view>
+            <image  class="icon_goto_in_the_last" src="images//goto.png"></image>
+        </view>
+    </view>
+</view>

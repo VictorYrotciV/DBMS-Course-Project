@@ -1,0 +1,13 @@
+<!--pages/managerIn/managerIn.wxml-->
+<form bindsubmit="submit">
+<view class="blank3"></view>
+    <view class="tishi">工号：</view>
+    <view class="msginput">
+      <input id="input" name="id" type="text"  placeholder="请输入您的工号"/>
+    </view>
+    <view class="tishi">密码：</view>
+    <view class="msginput"> <input id="input" name="code" type="text"  placeholder="请输入密码"/></view>
+    <view class="blank2"></view>
+    <button form-type="submit" >登录/Sign In</button>
+  </form>
+<view class="msginput">提示信息:{{text}}</view>

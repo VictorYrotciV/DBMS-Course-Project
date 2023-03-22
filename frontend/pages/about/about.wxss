@@ -1,0 +1,28 @@
+/* pages/about/about.wxss */
+.msginput{
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+  border: 1rpx solid gray;
+}
+#look{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  #input{
+    border: 1rpx solid gray;
+  }
+  #btn{
+    margin-top: 10px;
+  }
+  #out{
+    border: 1px solid gray;
+  }
+  #bottom{
+    margin-top: 50px;
+  }
+  #result{
+    margin-top: 20px;
+  }
+  

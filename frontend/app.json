@@ -1,0 +1,27 @@
+{
+  "pages":[
+    "pages/main/main",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/about/about",
+    "pages/addVio/addVio",
+    "pages/addReader/addReader",
+    "pages/delReader/delReader",
+    "pages/readerIn/readerIn",
+    "pages/managerIn/managerIn",
+    "pages/reader/reader",
+    "pages/searchbookinfo/searchbookinfo",
+    "pages/searchuserinfo/searchuserinfo",
+    "pages/delVio/delVio",
+    "pages/addBook/addBook",
+    "pages/borrow/borrow"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle":"black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

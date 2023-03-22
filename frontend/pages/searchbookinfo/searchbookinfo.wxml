@@ -1,0 +1,64 @@
+<!--pages/about/about.wxml-->
+<view>
+  <view id="look">
+    <text class="tishi">查找图书信息</text>
+  </view>
+
+  <view class="searchtext">{{searchtext}}</view>
+  <form bindsubmit="submit">
+    <text class="tishi">最受欢迎的图书</text>
+    <view  class="msginput" bindtap='bindShowMsg'>
+      <input id="input" name="class"   value="{{selectedclass}}" disabled="true"/>
+    </view>
+    
+<!-- 下拉需要显示的列表 -->
+    <view class="select_box" wx:if="{{select}}">
+        <view class="select_one" bindtap="mySelect" data-name="按书">按书</view>
+        <view class="select_one" bindtap="mySelect" data-name="按类型" >按类型</view>
+        <view class="select_one" bindtap="mySelect" data-name="按作者">按作者</view>
+    </view>
+    <button form-type="submit" >查找</button>
+  </form>
+  <view wx:if="{{selectedclass=='按书'}}">
+  <view class="showcolumn" wx:for="{{results}}" wx:key="times">
+    <view class="innerbox">书名:{{item.bookname}}</view>
+    <view class="innerbox">作者:{{item.author}}</view>
+    <view class="innerbox">出版商:{{item.publisher}}</view>
+    <view class="innerbox">借阅次数:{{item.times}}</view>
+  </view>
+</view>
+<view wx:if="{{selectedclass=='按类型'}}">
+  <view class="showcolumn" wx:for="{{results}}" wx:key="times">
+    <view class="innerbox">{{item.class}}</view>
+    <view class="innerbox">借阅次数:{{item.times}}</view>
+  </view>
+</view>
+<view wx:if="{{selectedclass=='按作者'}}">
+  <view class="showcolumn" wx:for="{{results}}" wx:key="times">
+    <view class="innerbox">{{item.author}}</view>
+    <view class="innerbox">借阅次数:{{item.times}}</view>
+  </view>
+</view>
+
+<view class="blankarea"></view>
+<form bindsubmit="searchsinglebook">
+  <text class="tishi">按书名查找</text>
+    <view class="msginput">
+      <input id="input" name="bookname" type="text"  value="兄弟"/>
+    </view>
+    <button form-type="submit" >搜索</button>
+</form>
+<view id="result" class="rst2">
+    <text class="tishi">结果：</text>
+      <view class="showcolumn" wx:for="{{results2}}">
+        <view class="innerbox">书名:{{item["书名"]}}</view>
+        <view class="innerbox">作者:{{item["作者"]}}</view>
+        <view class="innerbox">地址:{{item["地址"]}}</view>
+        <view class="innerbox">状态:{{item["状态"]}}</view>
+      </view>
+    </view>
+  <button id="bottom" bindtap="back">返回</button>
+</view>
+
+
+

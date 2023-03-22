@@ -1,0 +1,11 @@
+/* pages/main/main.wxss */
+.title{
+    background-color: azure;
+    opacity: 0.9;
+    text-align: center;
+    font-size: xx-large;
+    color: black;
+
+    margin-bottom: 700rpx;
+    width: 720rpx;
+}
